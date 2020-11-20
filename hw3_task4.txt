@@ -1,0 +1,52 @@
+ilia@ilia-VirtualBox:~$ which usermod
+/usr/sbin/usermod
+ilia@ilia-VirtualBox:~$ which deluser 
+/usr/sbin/deluser
+ilia@ilia-VirtualBox:~$ sudo sudoedit /etc/sudoers
+sudo: sudoedit doesn't need to be run via sudo
+ilia@ilia-VirtualBox:~$ sudo cat /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+Cmnd_Alias USER1_CMDS = /usr/sbin/usermod, /usr/sbin/deluser
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+user1 ALL=(ALL) USER1_CMDS
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+ilia@ilia-VirtualBox:~$ su user1
+Пароль: 
+user1@ilia-VirtualBox:/home/ilia$ sudo usermod -aG group1 ilia
+[sudo] пароль для user1: 
+user1@ilia-VirtualBox:/home/ilia$ id ilia
+uid=1000(ilia) gid=1000(ilia) группы=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare),1002(group1)
+user1@ilia-VirtualBox:/home/ilia$ sudo deluser ilia group1
+Удаляется пользователь «ilia» из группы «group1» ...
+Готово.
+user1@ilia-VirtualBox:/home/ilia$ id ilia
+uid=1000(ilia) gid=1000(ilia) группы=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+user1@ilia-VirtualBox:/home/ilia$ exit
+exit

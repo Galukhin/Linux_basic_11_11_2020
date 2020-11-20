@@ -1,0 +1,90 @@
+ilia@ilia-VirtualBox:~$ sudo sudoedit /etc/sudoers
+sudo: sudoedit doesn't need to be run via sudo
+[sudo] пароль для ilia: 
+ilia@ilia-VirtualBox:~$ sudo cat /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+user1 ALL=(ALL) NOPASSWD:ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+
+ilia@ilia-VirtualBox:~$ su user1
+Пароль: 
+user1@ilia-VirtualBox:/home/ilia$ sudo cat /etc/shadow
+root:!:18578:0:99999:7:::
+daemon:*:18474:0:99999:7:::
+bin:*:18474:0:99999:7:::
+sys:*:18474:0:99999:7:::
+sync:*:18474:0:99999:7:::
+games:*:18474:0:99999:7:::
+man:*:18474:0:99999:7:::
+lp:*:18474:0:99999:7:::
+mail:*:18474:0:99999:7:::
+news:*:18474:0:99999:7:::
+uucp:*:18474:0:99999:7:::
+proxy:*:18474:0:99999:7:::
+www-data:*:18474:0:99999:7:::
+backup:*:18474:0:99999:7:::
+list:*:18474:0:99999:7:::
+irc:*:18474:0:99999:7:::
+gnats:*:18474:0:99999:7:::
+nobody:*:18474:0:99999:7:::
+systemd-network:*:18474:0:99999:7:::
+systemd-resolve:*:18474:0:99999:7:::
+systemd-timesync:*:18474:0:99999:7:::
+messagebus:*:18474:0:99999:7:::
+syslog:*:18474:0:99999:7:::
+_apt:*:18474:0:99999:7:::
+tss:*:18474:0:99999:7:::
+uuidd:*:18474:0:99999:7:::
+tcpdump:*:18474:0:99999:7:::
+avahi-autoipd:*:18474:0:99999:7:::
+usbmux:*:18474:0:99999:7:::
+rtkit:*:18474:0:99999:7:::
+dnsmasq:*:18474:0:99999:7:::
+cups-pk-helper:*:18474:0:99999:7:::
+speech-dispatcher:!:18474:0:99999:7:::
+avahi:*:18474:0:99999:7:::
+kernoops:*:18474:0:99999:7:::
+saned:*:18474:0:99999:7:::
+nm-openvpn:*:18474:0:99999:7:::
+hplip:*:18474:0:99999:7:::
+whoopsie:*:18474:0:99999:7:::
+colord:*:18474:0:99999:7:::
+geoclue:*:18474:0:99999:7:::
+pulse:*:18474:0:99999:7:::
+gnome-initial-setup:*:18474:0:99999:7:::
+gdm:*:18474:0:99999:7:::
+ilia:$6$IuNXqG5lkegmHdce$3YSqMeY0NCF651O5/VVlZSJrTyzsBvodhIQfvyLAuqM1OAh/Ud.8v5t/dqkjo76UGy.ycehWW1adAu.AO/vqL1:18578:0:99999:7:::
+systemd-coredump:!!:18578::::::
+vboxadd:!:18578::::::
+sshd:*:18578:0:99999:7:::
+user1:$6$3RGL1wXUuH194Fuk$qtiDIDmdPqB62lgpQDevnCszT0l7fpsJ3POkxXRB348j8sSk2ZRQhSgFRDnwhic2rxii7/OSjlqDJxOLdawWu/:18585:0:99999:7:::
+user1@ilia-VirtualBox:/home/ilia$ exit
+exit
