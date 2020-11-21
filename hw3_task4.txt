@@ -38,15 +38,15 @@ user1 ALL=(ALL) USER1_CMDS
 
 #includedir /etc/sudoers.d
 ilia@ilia-VirtualBox:~$ su user1
-Пароль: 
+РџР°СЂРѕР»СЊ: 
 user1@ilia-VirtualBox:/home/ilia$ sudo usermod -aG group1 ilia
-[sudo] пароль для user1: 
+[sudo] РїР°СЂРѕР»СЊ РґР»СЏ user1: 
 user1@ilia-VirtualBox:/home/ilia$ id ilia
-uid=1000(ilia) gid=1000(ilia) группы=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare),1002(group1)
+uid=1000(ilia) gid=1000(ilia) РіСЂСѓРїРїС‹=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare),1002(group1)
 user1@ilia-VirtualBox:/home/ilia$ sudo deluser ilia group1
-Удаляется пользователь «ilia» из группы «group1» ...
-Готово.
+РЈРґР°Р»СЏРµС‚СЃСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ В«iliaВ» РёР· РіСЂСѓРїРїС‹ В«group1В» ...
+Р“РѕС‚РѕРІРѕ.
 user1@ilia-VirtualBox:/home/ilia$ id ilia
-uid=1000(ilia) gid=1000(ilia) группы=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+uid=1000(ilia) gid=1000(ilia) РіСЂСѓРїРїС‹=1000(ilia),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
 user1@ilia-VirtualBox:/home/ilia$ exit
 exit

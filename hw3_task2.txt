@@ -1,8 +1,8 @@
 ilia@ilia-VirtualBox:~$ sudo groupadd group1
-[sudo] пароль для ilia: 
+[sudo] РїР°СЂРѕР»СЊ РґР»СЏ ilia: 
 ilia@ilia-VirtualBox:~$ sudo addgroup group2
-Добавляется группа «group2» (GID 1003) ...
-Готово.
+Р”РѕР±Р°РІР»СЏРµС‚СЃСЏ РіСЂСѓРїРїР° В«group2В» (GID 1003) ...
+Р“РѕС‚РѕРІРѕ.
 ilia@ilia-VirtualBox:~$ cat /etc/group
 root:x:0:
 daemon:x:1:
@@ -82,21 +82,21 @@ user1:x:1001:
 group1:x:1002:
 group2:x:1003:
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1001(user1) группы=1001(user1)
+uid=1001(user1) gid=1001(user1) РіСЂСѓРїРїС‹=1001(user1)
 ilia@ilia-VirtualBox:~$ sudo usermod -g group1 user1
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1002(group1) группы=1002(group1)
+uid=1001(user1) gid=1002(group1) РіСЂСѓРїРїС‹=1002(group1)
 ilia@ilia-VirtualBox:~$ sudo usermod -g group2 user1
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1003(group2) группы=1003(group2)
+uid=1001(user1) gid=1003(group2) РіСЂСѓРїРїС‹=1003(group2)
 ilia@ilia-VirtualBox:~$ sudo usermod -g user1 user1
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1001(user1) группы=1001(user1)
+uid=1001(user1) gid=1001(user1) РіСЂСѓРїРїС‹=1001(user1)
 ilia@ilia-VirtualBox:~$ sudo usermod -aG group1 user1
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1001(user1) группы=1001(user1),1002(group1)
+uid=1001(user1) gid=1001(user1) РіСЂСѓРїРїС‹=1001(user1),1002(group1)
 ilia@ilia-VirtualBox:~$ sudo deluser user1 group1
-Удаляется пользователь «user1» из группы «group1» ...
-Готово.
+РЈРґР°Р»СЏРµС‚СЃСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ В«user1В» РёР· РіСЂСѓРїРїС‹ В«group1В» ...
+Р“РѕС‚РѕРІРѕ.
 ilia@ilia-VirtualBox:~$ id user1
-uid=1001(user1) gid=1001(user1) группы=1001(user1)
+uid=1001(user1) gid=1001(user1) РіСЂСѓРїРїС‹=1001(user1)

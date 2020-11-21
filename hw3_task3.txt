@@ -1,6 +1,6 @@
 ilia@ilia-VirtualBox:~$ sudo sudoedit /etc/sudoers
 sudo: sudoedit doesn't need to be run via sudo
-[sudo] пароль для ilia: 
+[sudo] РїР°СЂРѕР»СЊ РґР»В¤ ilia: 
 ilia@ilia-VirtualBox:~$ sudo cat /etc/sudoers
 #
 # This file MUST be edited with the 'visudo' command as root.
@@ -35,7 +35,7 @@ user1 ALL=(ALL) NOPASSWD:ALL
 #includedir /etc/sudoers.d
 
 ilia@ilia-VirtualBox:~$ su user1
-Пароль: 
+С•Р°СЂРѕР»СЊ: 
 user1@ilia-VirtualBox:/home/ilia$ sudo cat /etc/shadow
 root:!:18578:0:99999:7:::
 daemon:*:18474:0:99999:7:::
