@@ -1,0 +1,192 @@
+ilia@ilia-VirtualBox:~$ echo 'Hello, world!' > file1.txt
+ilia@ilia-VirtualBox:~$ ls
+ file1.txt   testfile.txt   Загрузки      Общедоступные
+ lesson2     Видео          Изображения  'Рабочий стол'
+ snap        Документы      Музыка        Шаблоны
+ilia@ilia-VirtualBox:~$ cat file1.txt 
+Hello, world!
+ilia@ilia-VirtualBox:~$ cat /etc/* 2>> errors.log
+# /etc/adduser.conf: `adduser' configuration.
+# See adduser(8) and adduser.conf(5) for full documentation.
+
+# The DSHELL variable specifies the default login shell on your
+# system.
+DSHELL=/bin/bash
+
+# The DHOME variable specifies the directory containing users' home
+# directories.
+DHOME=/home
+
+# If GROUPHOMES is "yes", then the home directories will be created as
+# /home/groupname/user.
+GROUPHOMES=no
+
+# If LETTERHOMES is "yes", then the created home directories will have
+# an extra directory - the first letter of the user name. For example:
+# /home/u/user.
+LETTERHOMES=no
+
+# The SKEL variable specifies the directory containing "skeletal" user
+# files; in other words, files such as a sample .profile that will be
+# copied to the new user's home directory when it is created.
+SKEL=/etc/skel
+
+# FIRST_SYSTEM_[GU]ID to LAST_SYSTEM_[GU]ID inclusive is the range for UIDs
+# for dynamically allocated administrative and system accounts/groups.
+# Please note that system software, such as the users allocated by the base-passwd
+# package, may assume that UIDs less than 100 are unallocated.
+FIRST_SYSTEM_UID=100
+LAST_SYSTEM_UID=999
+
+FIRST_SYSTEM_GID=100
+LAST_SYSTEM_GID=999
+#############
+#############
+#############
+##
+## Весь /etc/* вставлять не стал!
+##
+#############
+#############
+#############
+ilia@ilia-VirtualBox:~$ ls
+ errors.log   snap           Документы     Музыка          Шаблоны
+ file1.txt    testfile.txt   Загрузки      Общедоступные
+ lesson2      Видео          Изображения  'Рабочий стол'
+ilia@ilia-VirtualBox:~$ cat errors.log 
+cat: /etc/acpi: Это каталог
+cat: /etc/alsa: Это каталог
+cat: /etc/alternatives: Это каталог
+cat: /etc/apm: Это каталог
+cat: /etc/apparmor: Это каталог
+cat: /etc/apparmor.d: Это каталог
+cat: /etc/apport: Это каталог
+cat: /etc/apt: Это каталог
+cat: /etc/avahi: Это каталог
+cat: /etc/bash_completion.d: Это каталог
+cat: /etc/binfmt.d: Это каталог
+cat: /etc/bluetooth: Это каталог
+cat: /etc/brlapi.key: Отказано в доступе
+cat: /etc/brltty: Это каталог
+cat: /etc/ca-certificates: Это каталог
+cat: /etc/calendar: Это каталог
+cat: /etc/chatscripts: Это каталог
+cat: /etc/chromium: Это каталог
+cat: /etc/console-setup: Это каталог
+cat: /etc/cracklib: Это каталог
+cat: /etc/cron.d: Это каталог
+cat: /etc/cron.daily: Это каталог
+cat: /etc/cron.hourly: Это каталог
+cat: /etc/cron.monthly: Это каталог
+cat: /etc/cron.weekly: Это каталог
+cat: /etc/cups: Это каталог
+cat: /etc/cupshelpers: Это каталог
+cat: /etc/dbus-1: Это каталог
+cat: /etc/dconf: Это каталог
+cat: /etc/default: Это каталог
+cat: /etc/depmod.d: Это каталог
+cat: /etc/dhcp: Это каталог
+cat: /etc/dictionaries-common: Это каталог
+cat: /etc/dpkg: Это каталог
+cat: /etc/emacs: Это каталог
+cat: /etc/environment.d: Это каталог
+cat: /etc/firefox: Это каталог
+cat: /etc/fonts: Это каталог
+cat: /etc/fwupd: Это каталог
+cat: /etc/gdb: Это каталог
+cat: /etc/gdm3: Это каталог
+cat: /etc/geoclue: Это каталог
+cat: /etc/ghostscript: Это каталог
+cat: /etc/glvnd: Это каталог
+cat: /etc/gnome: Это каталог
+cat: /etc/groff: Это каталог
+cat: /etc/grub.d: Это каталог
+cat: /etc/gshadow: Отказано в доступе
+cat: /etc/gshadow-: Отказано в доступе
+cat: /etc/gss: Это каталог
+cat: /etc/gtk-2.0: Это каталог
+cat: /etc/gtk-3.0: Это каталог
+cat: /etc/hp: Это каталог
+cat: /etc/ifplugd: Это каталог
+cat: /etc/init: Это каталог
+cat: /etc/init.d: Это каталог
+cat: /etc/initramfs-tools: Это каталог
+cat: /etc/insserv.conf.d: Это каталог
+cat: /etc/iproute2: Это каталог
+cat: /etc/kernel: Это каталог
+cat: /etc/ldap: Это каталог
+cat: /etc/ld.so.conf.d: Это каталог
+cat: /etc/libblockdev: Это каталог
+cat: /etc/libnl-3: Это каталог
+cat: /etc/libpaper.d: Это каталог
+cat: /etc/libreoffice: Это каталог
+cat: /etc/logcheck: Это каталог
+cat: /etc/logrotate.d: Это каталог
+cat: /etc/mc: Это каталог
+cat: /etc/modprobe.d: Это каталог
+cat: /etc/modules-load.d: Это каталог
+cat: /etc/mysql: Это каталог
+cat: /etc/netplan: Это каталог
+cat: /etc/network: Это каталог
+cat: /etc/networkd-dispatcher: Это каталог
+cat: /etc/NetworkManager: Это каталог
+cat: /etc/newt: Это каталог
+cat: /etc/openvpn: Это каталог
+cat: /etc/opt: Это каталог
+cat: /etc/PackageKit: Это каталог
+cat: /etc/pam.d: Это каталог
+cat: /etc/pcmcia: Это каталог
+cat: /etc/perl: Это каталог
+cat: /etc/pki: Это каталог
+cat: /etc/pm: Это каталог
+cat: /etc/polkit-1: Это каталог
+cat: /etc/ppp: Это каталог
+cat: /etc/profile.d: Это каталог
+cat: /etc/pulse: Это каталог
+cat: /etc/python3: Это каталог
+cat: /etc/python3.8: Это каталог
+cat: /etc/rc0.d: Это каталог
+cat: /etc/rc1.d: Это каталог
+cat: /etc/rc2.d: Это каталог
+cat: /etc/rc3.d: Это каталог
+cat: /etc/rc4.d: Это каталог
+cat: /etc/rc5.d: Это каталог
+cat: /etc/rc6.d: Это каталог
+cat: /etc/rcS.d: Это каталог
+cat: /etc/rsyslog.d: Это каталог
+cat: /etc/sane.d: Это каталог
+cat: /etc/security: Это каталог
+cat: /etc/selinux: Это каталог
+cat: /etc/sensors.d: Это каталог
+cat: /etc/sgml: Это каталог
+cat: /etc/shadow: Отказано в доступе
+cat: /etc/shadow-: Отказано в доступе
+cat: /etc/skel: Это каталог
+cat: /etc/snmp: Это каталог
+cat: /etc/speech-dispatcher: Это каталог
+cat: /etc/ssh: Это каталог
+cat: /etc/ssl: Это каталог
+cat: /etc/sudoers: Отказано в доступе
+cat: /etc/sudoers.d: Это каталог
+cat: /etc/sysctl.d: Это каталог
+cat: /etc/systemd: Это каталог
+cat: /etc/terminfo: Это каталог
+cat: /etc/thermald: Это каталог
+cat: /etc/thunderbird: Это каталог
+cat: /etc/tmpfiles.d: Это каталог
+cat: /etc/ubuntu-advantage: Это каталог
+cat: /etc/udev: Это каталог
+cat: /etc/udisks2: Это каталог
+cat: /etc/ufw: Это каталог
+cat: /etc/update-manager: Это каталог
+cat: /etc/update-motd.d: Это каталог
+cat: /etc/update-notifier: Это каталог
+cat: /etc/UPower: Это каталог
+cat: /etc/usb_modeswitch.d: Это каталог
+cat: /etc/vim: Это каталог
+cat: /etc/vmware-tools: Это каталог
+cat: /etc/vulkan: Это каталог
+cat: /etc/wpa_supplicant: Это каталог
+cat: /etc/X11: Это каталог
+cat: /etc/xdg: Это каталог
+cat: /etc/xml: Это каталог
