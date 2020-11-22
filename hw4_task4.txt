@@ -185,7 +185,7 @@ root        4080       2  0 18:04 ?        00:00:00 [kworker/u2:2-events_power_e
 ilia        4086    2038  0 18:07 pts/0    00:00:00 mc
 ilia        4088    4086  0 18:07 pts/1    00:00:00 bash -rcfile .bashrc
 ilia        4094    4088  0 18:07 pts/1    00:00:00 ps -ef
-ilia@ilia-VirtualBox:~$ kill -9”·ËÚÓ
+ilia@ilia-VirtualBox:~$ kill -9‚Äù–±–∏—Ç–æ
 ilia@ilia-VirtualBox:~$ ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 15:33 ?        00:00:03 /sbin/init splash

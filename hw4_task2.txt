@@ -1,38 +1,38 @@
 ilia@ilia-VirtualBox:~$ ls -la
-итого 148
-drwxr-xr-x 18 ilia ilia  4096 ноя 22 12:11  .
-drwxr-xr-x  4 root root  4096 ноя 19 21:19  ..
--rw-------  1 ilia ilia 12852 ноя 21 22:24  .bash_history
--rw-r--r--  1 ilia ilia   220 ноя 12 14:16  .bash_logout
--rw-r--r--  1 ilia ilia  3771 ноя 12 14:16  .bashrc
-drwx------ 17 ilia ilia  4096 ноя 18 20:24  .cache
-drwx------ 21 ilia ilia  4096 ноя 21 21:46  .config
--rw-rw-r--  1 ilia ilia  5734 ноя 22 12:14  errors.log
--rw-rw-r--  1 ilia ilia    14 ноя 22 12:03  file1.txt
-drwx------  3 ilia ilia  4096 ноя 18 19:30  .gnupg
-drwxrwxr-x  2 ilia ilia  4096 ноя 14 20:56  lesson2
-drwx------  3 ilia ilia  4096 ноя 12 15:02  .local
-drwx------  5 ilia ilia  4096 ноя 13 23:29  .mozilla
--rw-r--r--  1 ilia ilia   354 ноя 21 22:50  .pam_environment
--rw-r--r--  1 ilia ilia   807 ноя 12 14:16  .profile
-drwxr-xr-x  3 ilia ilia  4096 ноя 12 19:31  snap
-drwx------  2 ilia ilia  4096 ноя 17 12:03  .ssh
--rw-r--r--  1 ilia ilia     0 ноя 12 15:27  .sudo_as_admin_successful
--rw-rw-r--  1 ilia ilia    12 ноя 21 21:21  testfile.txt
--rw-r-----  1 ilia ilia     5 ноя 22 11:59  .vboxclient-clipboard.pid
--rw-r-----  1 ilia ilia     5 ноя 22 11:59  .vboxclient-display-svga-x11.pid
--rw-r-----  1 ilia ilia     5 ноя 22 11:59  .vboxclient-draganddrop.pid
--rw-r-----  1 ilia ilia     5 ноя 22 11:59  .vboxclient-seamless.pid
--rw-------  1 ilia ilia  5486 ноя 17 12:03  .viminfo
--rw-rw-r--  1 ilia ilia   534 ноя 18 19:11  .win7-setup.log
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02  Видео
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02  Документы
-drwxr-xr-x  2 ilia ilia  4096 ноя 18 20:22  Загрузки
-drwxr-xr-x  2 ilia ilia  4096 ноя 14 15:07  Изображения
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02  Музыка
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02  Общедоступные
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02 'Рабочий стол'
-drwxr-xr-x  2 ilia ilia  4096 ноя 12 15:02  Шаблоны
+РёС‚РѕРіРѕ 148
+drwxr-xr-x 18 ilia ilia  4096 РЅРѕСЏ 22 12:11  .
+drwxr-xr-x  4 root root  4096 РЅРѕСЏ 19 21:19  ..
+-rw-------  1 ilia ilia 12852 РЅРѕСЏ 21 22:24  .bash_history
+-rw-r--r--  1 ilia ilia   220 РЅРѕСЏ 12 14:16  .bash_logout
+-rw-r--r--  1 ilia ilia  3771 РЅРѕСЏ 12 14:16  .bashrc
+drwx------ 17 ilia ilia  4096 РЅРѕСЏ 18 20:24  .cache
+drwx------ 21 ilia ilia  4096 РЅРѕСЏ 21 21:46  .config
+-rw-rw-r--  1 ilia ilia  5734 РЅРѕСЏ 22 12:14  errors.log
+-rw-rw-r--  1 ilia ilia    14 РЅРѕСЏ 22 12:03  file1.txt
+drwx------  3 ilia ilia  4096 РЅРѕСЏ 18 19:30  .gnupg
+drwxrwxr-x  2 ilia ilia  4096 РЅРѕСЏ 14 20:56  lesson2
+drwx------  3 ilia ilia  4096 РЅРѕСЏ 12 15:02  .local
+drwx------  5 ilia ilia  4096 РЅРѕСЏ 13 23:29  .mozilla
+-rw-r--r--  1 ilia ilia   354 РЅРѕСЏ 21 22:50  .pam_environment
+-rw-r--r--  1 ilia ilia   807 РЅРѕСЏ 12 14:16  .profile
+drwxr-xr-x  3 ilia ilia  4096 РЅРѕСЏ 12 19:31  snap
+drwx------  2 ilia ilia  4096 РЅРѕСЏ 17 12:03  .ssh
+-rw-r--r--  1 ilia ilia     0 РЅРѕСЏ 12 15:27  .sudo_as_admin_successful
+-rw-rw-r--  1 ilia ilia    12 РЅРѕСЏ 21 21:21  testfile.txt
+-rw-r-----  1 ilia ilia     5 РЅРѕСЏ 22 11:59  .vboxclient-clipboard.pid
+-rw-r-----  1 ilia ilia     5 РЅРѕСЏ 22 11:59  .vboxclient-display-svga-x11.pid
+-rw-r-----  1 ilia ilia     5 РЅРѕСЏ 22 11:59  .vboxclient-draganddrop.pid
+-rw-r-----  1 ilia ilia     5 РЅРѕСЏ 22 11:59  .vboxclient-seamless.pid
+-rw-------  1 ilia ilia  5486 РЅРѕСЏ 17 12:03  .viminfo
+-rw-rw-r--  1 ilia ilia   534 РЅРѕСЏ 18 19:11  .win7-setup.log
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02  Р’РёРґРµРѕ
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02  Р”РѕРєСѓРјРµРЅС‚С‹
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 18 20:22  Р—Р°РіСЂСѓР·РєРё
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 14 15:07  РР·РѕР±СЂР°Р¶РµРЅРёСЏ
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02  РњСѓР·С‹РєР°
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02  РћР±С‰РµРґРѕСЃС‚СѓРїРЅС‹Рµ
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02 'Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»'
+drwxr-xr-x  2 ilia ilia  4096 РЅРѕСЏ 12 15:02  РЁР°Р±Р»РѕРЅС‹
 
 ilia@ilia-VirtualBox:~$ ls -la | cut -b1-10 | sort | uniq
 drwx------
@@ -42,9 +42,9 @@ drwxr-xr-x
 -rw-r-----
 -rw-r--r--
 -rw-rw-r--
-итого
+РёС‚РѕРіРѕ
 
-#### А можно так:
+#### Рђ РјРѕР¶РЅРѕ С‚Р°Рє:
 
 ilia@ilia-VirtualBox:~$ ls -la | cut -b1-10 | sort -u
 drwx------
@@ -54,4 +54,4 @@ drwxr-xr-x
 -rw-r-----
 -rw-r--r--
 -rw-rw-r--
-итого
+РёС‚РѕРіРѕ

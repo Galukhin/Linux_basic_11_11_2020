@@ -1,8 +1,8 @@
 ilia@ilia-VirtualBox:~$ echo 'Hello, world!' > file1.txt
 ilia@ilia-VirtualBox:~$ ls
- file1.txt   testfile.txt   Загрузки      Общедоступные
- lesson2     Видео          Изображения  'Рабочий стол'
- snap        Документы      Музыка        Шаблоны
+ file1.txt   testfile.txt   Р—Р°РіСЂСѓР·РєРё      РћР±С‰РµРґРѕСЃС‚СѓРїРЅС‹Рµ
+ lesson2     Р’РёРґРµРѕ          РР·РѕР±СЂР°Р¶РµРЅРёСЏ  'Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»'
+ snap        Р”РѕРєСѓРјРµРЅС‚С‹      РњСѓР·С‹РєР°        РЁР°Р±Р»РѕРЅС‹
 ilia@ilia-VirtualBox:~$ cat file1.txt 
 Hello, world!
 ilia@ilia-VirtualBox:~$ cat /etc/* 2>> errors.log
@@ -44,149 +44,149 @@ LAST_SYSTEM_GID=999
 #############
 #############
 ##
-## Весь /etc/* вставлять не стал!
+## Р’РµСЃСЊ /etc/* РІСЃС‚Р°РІР»СЏС‚СЊ РЅРµ СЃС‚Р°Р»!
 ##
 #############
 #############
 #############
 ilia@ilia-VirtualBox:~$ ls
- errors.log   snap           Документы     Музыка          Шаблоны
- file1.txt    testfile.txt   Загрузки      Общедоступные
- lesson2      Видео          Изображения  'Рабочий стол'
+ errors.log   snap           Р”РѕРєСѓРјРµРЅС‚С‹     РњСѓР·С‹РєР°          РЁР°Р±Р»РѕРЅС‹
+ file1.txt    testfile.txt   Р—Р°РіСЂСѓР·РєРё      РћР±С‰РµРґРѕСЃС‚СѓРїРЅС‹Рµ
+ lesson2      Р’РёРґРµРѕ          РР·РѕР±СЂР°Р¶РµРЅРёСЏ  'Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»'
 ilia@ilia-VirtualBox:~$ cat errors.log 
-cat: /etc/acpi: Это каталог
-cat: /etc/alsa: Это каталог
-cat: /etc/alternatives: Это каталог
-cat: /etc/apm: Это каталог
-cat: /etc/apparmor: Это каталог
-cat: /etc/apparmor.d: Это каталог
-cat: /etc/apport: Это каталог
-cat: /etc/apt: Это каталог
-cat: /etc/avahi: Это каталог
-cat: /etc/bash_completion.d: Это каталог
-cat: /etc/binfmt.d: Это каталог
-cat: /etc/bluetooth: Это каталог
-cat: /etc/brlapi.key: Отказано в доступе
-cat: /etc/brltty: Это каталог
-cat: /etc/ca-certificates: Это каталог
-cat: /etc/calendar: Это каталог
-cat: /etc/chatscripts: Это каталог
-cat: /etc/chromium: Это каталог
-cat: /etc/console-setup: Это каталог
-cat: /etc/cracklib: Это каталог
-cat: /etc/cron.d: Это каталог
-cat: /etc/cron.daily: Это каталог
-cat: /etc/cron.hourly: Это каталог
-cat: /etc/cron.monthly: Это каталог
-cat: /etc/cron.weekly: Это каталог
-cat: /etc/cups: Это каталог
-cat: /etc/cupshelpers: Это каталог
-cat: /etc/dbus-1: Это каталог
-cat: /etc/dconf: Это каталог
-cat: /etc/default: Это каталог
-cat: /etc/depmod.d: Это каталог
-cat: /etc/dhcp: Это каталог
-cat: /etc/dictionaries-common: Это каталог
-cat: /etc/dpkg: Это каталог
-cat: /etc/emacs: Это каталог
-cat: /etc/environment.d: Это каталог
-cat: /etc/firefox: Это каталог
-cat: /etc/fonts: Это каталог
-cat: /etc/fwupd: Это каталог
-cat: /etc/gdb: Это каталог
-cat: /etc/gdm3: Это каталог
-cat: /etc/geoclue: Это каталог
-cat: /etc/ghostscript: Это каталог
-cat: /etc/glvnd: Это каталог
-cat: /etc/gnome: Это каталог
-cat: /etc/groff: Это каталог
-cat: /etc/grub.d: Это каталог
-cat: /etc/gshadow: Отказано в доступе
-cat: /etc/gshadow-: Отказано в доступе
-cat: /etc/gss: Это каталог
-cat: /etc/gtk-2.0: Это каталог
-cat: /etc/gtk-3.0: Это каталог
-cat: /etc/hp: Это каталог
-cat: /etc/ifplugd: Это каталог
-cat: /etc/init: Это каталог
-cat: /etc/init.d: Это каталог
-cat: /etc/initramfs-tools: Это каталог
-cat: /etc/insserv.conf.d: Это каталог
-cat: /etc/iproute2: Это каталог
-cat: /etc/kernel: Это каталог
-cat: /etc/ldap: Это каталог
-cat: /etc/ld.so.conf.d: Это каталог
-cat: /etc/libblockdev: Это каталог
-cat: /etc/libnl-3: Это каталог
-cat: /etc/libpaper.d: Это каталог
-cat: /etc/libreoffice: Это каталог
-cat: /etc/logcheck: Это каталог
-cat: /etc/logrotate.d: Это каталог
-cat: /etc/mc: Это каталог
-cat: /etc/modprobe.d: Это каталог
-cat: /etc/modules-load.d: Это каталог
-cat: /etc/mysql: Это каталог
-cat: /etc/netplan: Это каталог
-cat: /etc/network: Это каталог
-cat: /etc/networkd-dispatcher: Это каталог
-cat: /etc/NetworkManager: Это каталог
-cat: /etc/newt: Это каталог
-cat: /etc/openvpn: Это каталог
-cat: /etc/opt: Это каталог
-cat: /etc/PackageKit: Это каталог
-cat: /etc/pam.d: Это каталог
-cat: /etc/pcmcia: Это каталог
-cat: /etc/perl: Это каталог
-cat: /etc/pki: Это каталог
-cat: /etc/pm: Это каталог
-cat: /etc/polkit-1: Это каталог
-cat: /etc/ppp: Это каталог
-cat: /etc/profile.d: Это каталог
-cat: /etc/pulse: Это каталог
-cat: /etc/python3: Это каталог
-cat: /etc/python3.8: Это каталог
-cat: /etc/rc0.d: Это каталог
-cat: /etc/rc1.d: Это каталог
-cat: /etc/rc2.d: Это каталог
-cat: /etc/rc3.d: Это каталог
-cat: /etc/rc4.d: Это каталог
-cat: /etc/rc5.d: Это каталог
-cat: /etc/rc6.d: Это каталог
-cat: /etc/rcS.d: Это каталог
-cat: /etc/rsyslog.d: Это каталог
-cat: /etc/sane.d: Это каталог
-cat: /etc/security: Это каталог
-cat: /etc/selinux: Это каталог
-cat: /etc/sensors.d: Это каталог
-cat: /etc/sgml: Это каталог
-cat: /etc/shadow: Отказано в доступе
-cat: /etc/shadow-: Отказано в доступе
-cat: /etc/skel: Это каталог
-cat: /etc/snmp: Это каталог
-cat: /etc/speech-dispatcher: Это каталог
-cat: /etc/ssh: Это каталог
-cat: /etc/ssl: Это каталог
-cat: /etc/sudoers: Отказано в доступе
-cat: /etc/sudoers.d: Это каталог
-cat: /etc/sysctl.d: Это каталог
-cat: /etc/systemd: Это каталог
-cat: /etc/terminfo: Это каталог
-cat: /etc/thermald: Это каталог
-cat: /etc/thunderbird: Это каталог
-cat: /etc/tmpfiles.d: Это каталог
-cat: /etc/ubuntu-advantage: Это каталог
-cat: /etc/udev: Это каталог
-cat: /etc/udisks2: Это каталог
-cat: /etc/ufw: Это каталог
-cat: /etc/update-manager: Это каталог
-cat: /etc/update-motd.d: Это каталог
-cat: /etc/update-notifier: Это каталог
-cat: /etc/UPower: Это каталог
-cat: /etc/usb_modeswitch.d: Это каталог
-cat: /etc/vim: Это каталог
-cat: /etc/vmware-tools: Это каталог
-cat: /etc/vulkan: Это каталог
-cat: /etc/wpa_supplicant: Это каталог
-cat: /etc/X11: Это каталог
-cat: /etc/xdg: Это каталог
-cat: /etc/xml: Это каталог
+cat: /etc/acpi: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/alsa: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/alternatives: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/apm: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/apparmor: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/apparmor.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/apport: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/apt: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/avahi: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/bash_completion.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/binfmt.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/bluetooth: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/brlapi.key: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/brltty: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ca-certificates: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/calendar: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/chatscripts: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/chromium: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/console-setup: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cracklib: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cron.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cron.daily: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cron.hourly: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cron.monthly: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cron.weekly: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cups: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/cupshelpers: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/dbus-1: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/dconf: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/default: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/depmod.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/dhcp: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/dictionaries-common: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/dpkg: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/emacs: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/environment.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/firefox: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/fonts: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/fwupd: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gdb: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gdm3: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/geoclue: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ghostscript: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/glvnd: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gnome: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/groff: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/grub.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gshadow: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/gshadow-: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/gss: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gtk-2.0: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/gtk-3.0: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/hp: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ifplugd: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/init: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/init.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/initramfs-tools: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/insserv.conf.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/iproute2: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/kernel: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ldap: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ld.so.conf.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/libblockdev: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/libnl-3: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/libpaper.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/libreoffice: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/logcheck: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/logrotate.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/mc: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/modprobe.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/modules-load.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/mysql: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/netplan: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/network: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/networkd-dispatcher: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/NetworkManager: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/newt: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/openvpn: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/opt: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/PackageKit: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/pam.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/pcmcia: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/perl: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/pki: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/pm: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/polkit-1: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ppp: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/profile.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/pulse: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/python3: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/python3.8: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc0.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc1.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc2.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc3.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc4.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc5.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rc6.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rcS.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/rsyslog.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/sane.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/security: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/selinux: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/sensors.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/sgml: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/shadow: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/shadow-: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/skel: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/snmp: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/speech-dispatcher: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ssh: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ssl: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/sudoers: РћС‚РєР°Р·Р°РЅРѕ РІ РґРѕСЃС‚СѓРїРµ
+cat: /etc/sudoers.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/sysctl.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/systemd: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/terminfo: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/thermald: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/thunderbird: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/tmpfiles.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ubuntu-advantage: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/udev: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/udisks2: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/ufw: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/update-manager: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/update-motd.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/update-notifier: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/UPower: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/usb_modeswitch.d: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/vim: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/vmware-tools: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/vulkan: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/wpa_supplicant: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/X11: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/xdg: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
+cat: /etc/xml: Р­С‚Рѕ РєР°С‚Р°Р»РѕРі
