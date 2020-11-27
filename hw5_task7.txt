@@ -1,0 +1,19 @@
+ilia@ilia-VirtualBox:~$ mkdir dir_nolist
+ilia@ilia-VirtualBox:~$ cd dir_nolist/
+ilia@ilia-VirtualBox:~/dir_nolist$ touch file1 file2 file3
+ilia@ilia-VirtualBox:~/dir_nolist$ ls -l
+итого 0
+-rw-rw-r-- 1 ilia ilia 0 ноя 27 20:28 file1
+-rw-rw-r-- 1 ilia ilia 0 ноя 27 20:28 file2
+-rw-rw-r-- 1 ilia ilia 0 ноя 27 20:28 file3
+ilia@ilia-VirtualBox:~/dir_nolist$ cd ..
+ilia@ilia-VirtualBox:~$ chmod 330 dir_nolist
+ilia@ilia-VirtualBox:~$ cd dir_nolist/
+ilia@ilia-VirtualBox:~/dir_nolist$ ls
+ls: невозможно открыть каталог '.': Отказано в доступе
+ilia@ilia-VirtualBox:~/dir_nolist$ cat > file1
+Line1
+Line2
+ilia@ilia-VirtualBox:~/dir_nolist$ cat file1
+Line1
+Line2

@@ -1,0 +1,36 @@
+ilia@ilia-VirtualBox:~/lesson5$ mv file4.txt file1_a.txt
+ilia@ilia-VirtualBox:~/lesson5$ mv file2.txt file2_a.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln ~/lesson5/file1_a.txt file1_b.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln file1_a.txt file1_c.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln -s ~/lesson5/file2_a.txt file2_b.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln -s file2_a.txt file2_c.txt
+ilia@ilia-VirtualBox:~/lesson5$ ls -li
+итого 16
+521654 -rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+521654 -rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_b.txt
+521654 -rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_c.txt
+521655 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+521704 lrwxrwxrwx 1 ilia ilia 30 ноя 26 15:19 file2_b.txt -> /home/ilia/lesson5/file2_a.txt
+521705 lrwxrwxrwx 1 ilia ilia 11 ноя 26 15:20 file2_c.txt -> file2_a.txt
+521702 lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+ilia@ilia-VirtualBox:~/lesson5$ mv file1_b.txt ..
+ilia@ilia-VirtualBox:~/lesson5$ mv file1_c.txt ..
+ilia@ilia-VirtualBox:~/lesson5$ mv file2_b.txt ..
+ilia@ilia-VirtualBox:~/lesson5$ mv file2_c.txt ..
+ilia@ilia-VirtualBox:~/lesson5$ ls -li
+итого 8
+521654 -rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+521655 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+521702 lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+ilia@ilia-VirtualBox:~/lesson5$ cd
+ilia@ilia-VirtualBox:~$ cat file1_b.txt file1_c.txt file2_b.txt file2_c.txt 
+Line1
+Line2
+Line1
+Line2
+Line1
+Line2
+cat: file2_c.txt: Нет такого файла или каталога
+# Вывод: для символических ссылок нужен полный путь, если ссылку переместить в другую директорию
+# Жесткие ссылки ссылаются на inode файла, а они уникальны в рамках одного раздела.
+# Поэтому не важно, какой будет ссылка при создании - полной или относительной.

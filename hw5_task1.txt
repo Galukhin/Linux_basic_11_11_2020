@@ -1,0 +1,27 @@
+ilia@ilia-VirtualBox:~$ mkdir lesson5
+ilia@ilia-VirtualBox:~$ cd lesson5
+ilia@ilia-VirtualBox:~/lesson5$ cat > file1.txt
+Line1
+Line2
+ilia@ilia-VirtualBox:~/lesson5$ cp file1.txt file2.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln -s file1.txt file3.txt
+ilia@ilia-VirtualBox:~/lesson5$ ln file1.txt file4.txt
+ilia@ilia-VirtualBox:~/lesson5$ ls -li
+итого 12
+521654 -rw-rw-r-- 2 ilia ilia 12 ноя 26 14:52 file1.txt
+521655 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2.txt
+521702 lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+521654 -rw-rw-r-- 2 ilia ilia 12 ноя 26 14:52 file4.txt
+ilia@ilia-VirtualBox:~/lesson5$ rm file1.txt 
+ilia@ilia-VirtualBox:~/lesson5$ ls -li
+итого 8
+521655 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2.txt
+521702 lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt # ""Ломанная ссылка", подсвечена красным"
+521654 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:52 file4.txt
+ilia@ilia-VirtualBox:~/lesson5$ cat file2.txt file4.txt file3.txt 
+Line1
+Line2
+Line1
+Line2
+cat: file3.txt: Нет такого файла или каталога
+

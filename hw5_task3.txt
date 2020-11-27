@@ -1,0 +1,25 @@
+ilia@ilia-VirtualBox:~$ cd lesson5
+ilia@ilia-VirtualBox:~/lesson5$ ls -li
+итого 8
+521654 -rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+521655 -rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+521702 lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+ilia@ilia-VirtualBox:~/lesson5$ chmod ugo=x file1_a.txt 
+ilia@ilia-VirtualBox:~/lesson5$ ls -l
+итого 8
+---x--x--x 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+-rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+ilia@ilia-VirtualBox:~/lesson5$ chmod ug=rw file1_a.txt 
+ilia@ilia-VirtualBox:~/lesson5$ chmod o=r file1_a.txt 
+ilia@ilia-VirtualBox:~/lesson5$ ls -l
+итого 8
+-rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+-rw-rw-r-- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt
+ilia@ilia-VirtualBox:~/lesson5$ chmod 600 file2_a.txt 
+ilia@ilia-VirtualBox:~/lesson5$ ls -l
+итого 8
+-rw-rw-r-- 3 ilia ilia 12 ноя 26 14:52 file1_a.txt
+-rw------- 1 ilia ilia 12 ноя 26 14:54 file2_a.txt
+lrwxrwxrwx 1 ilia ilia  9 ноя 26 14:56 file3.txt -> file1.txt

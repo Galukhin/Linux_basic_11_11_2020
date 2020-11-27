@@ -1,0 +1,19 @@
+ilia@ilia-VirtualBox:~$ cd dev
+ilia@ilia-VirtualBox:~/dev$ mkdir dir_exch
+ilia@ilia-VirtualBox:~/dev$ chmod 1770 dir_exch/
+ilia@ilia-VirtualBox:~/dev$ ls -l
+итого 4
+drwxrws--T 2 ilia developer 4096 но¤ 27 19:50 dir_exch
+ilia@ilia-VirtualBox:~/dev$ cd dir_exch/
+ilia@ilia-VirtualBox:~/dev/dir_exch$ touch file1
+ilia@ilia-VirtualBox:~/dev/dir_exch$ su user1
+ѕароль: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+user1@ilia-VirtualBox:/home/ilia/dev/dir_exch$ rm file1
+rm: cannot remove 'file1': Operation not permitted
+user1@ilia-VirtualBox:/home/ilia/dev/dir_exch$ exit
+exit
+ilia@ilia-VirtualBox:~/dev/dir_exch$ rm file1 
+ilia@ilia-VirtualBox:~/dev/dir_exch$ ls
