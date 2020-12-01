@@ -1,0 +1,13 @@
+﻿ilia@ilia-VirtualBox:~/lesson6$ echo 'sudo reboot' > reboot_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ chmod +x reboot_script.sh 
+ilia@ilia-VirtualBox:~/lesson6$ ls -l
+итого 24
+-rw-rw-r--  1 ilia ilia   20 ноя 30 01:26 copy_file
+-rw-rw-r--  1 ilia ilia   20 ноя 30 01:27 file1.txt
+-rwxrwxr-x  1 ilia ilia   12 дек  1 12:54 reboot_script.sh
+-rwxrwxr-x  1 ilia ilia  186 ноя 30 00:02 sed_script.sh
+drwxrwxr-x 10 ilia ilia 4096 ноя 30 02:36 task2
+-rwxrwxr-x  1 ilia ilia  326 ноя 30 01:14 tr_sed_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ at -f /home/ilia/lesson6/reboot_script.sh 12:58pm 12/01/2020 
+warning: commands will be executed using /bin/sh
+job 3 at Tue Dec  1 12:58:00 2020

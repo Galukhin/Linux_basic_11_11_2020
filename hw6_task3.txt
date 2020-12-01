@@ -1,0 +1,7 @@
+﻿ilia@ilia-VirtualBox:~$ ls -l | awk 'NR > 1 {print $1}' | sort | uniq
+drwxrws---
+drwxrwxr-x
+drwxr-xr-x
+d-wx-wx---
+lrwxrwxrwx
+-rw-rw-r--

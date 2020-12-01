@@ -1,0 +1,9 @@
+﻿ilia@ilia-VirtualBox:~$ cat /var/log/syslog | grep -i ssh
+Dec  1 11:33:54 ilia-VirtualBox systemd[839]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Dec  1 11:34:21 ilia-VirtualBox systemd[839]: Starting Start gnome-keyring as SSH agent...
+Dec  1 11:34:21 ilia-VirtualBox systemd[839]: Finished Start gnome-keyring as SSH agent.
+Dec  1 11:34:21 ilia-VirtualBox systemd[839]: Started OpenSSH Agent.
+Dec  1 11:34:21 ilia-VirtualBox systemd[839]: ssh-agent.service: Succeeded.
+Dec  1 11:34:22 ilia-VirtualBox gnome-keyring-ssh.desktop[1157]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Dec  1 11:34:22 ilia-VirtualBox gnome-keyring-pkcs11.desktop[1158]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+Dec  1 11:34:22 ilia-VirtualBox gnome-keyring-secrets.desktop[1159]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh

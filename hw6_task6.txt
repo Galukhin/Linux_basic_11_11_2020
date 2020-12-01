@@ -1,0 +1,280 @@
+﻿ilia@ilia-VirtualBox:~/lesson6$ nano backup_etc_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ cat backup_etc_script.sh 
+#!/bin/bash
+sudo tar -zcf /home/ilia/backup_etc.tgz /etc
+ilia@ilia-VirtualBox:~/lesson6$ chmod +x backup_etc_script.sh 
+ilia@ilia-VirtualBox:~/lesson6$ ls -l
+итого 28
+-rwxrwxr-x  1 ilia ilia   56 дек  1 14:20 backup_etc_script.sh
+-rw-rw-r--  1 ilia ilia   20 ноя 30 01:26 copy_file
+-rw-rw-r--  1 ilia ilia   20 ноя 30 01:27 file1.txt
+-rwxrwxr-x  1 ilia ilia    7 дек  1 13:07 reboot_script.sh
+-rwxrwxr-x  1 ilia ilia  186 ноя 30 00:02 sed_script.sh
+drwxrwxr-x 10 ilia ilia 4096 ноя 30 02:36 task2
+-rwxrwxr-x  1 ilia ilia  326 ноя 30 01:14 tr_sed_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ crontab -e
+crontab: installing new crontab
+ilia@ilia-VirtualBox:~/lesson6$ crontab -l
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+@reboot /home/ilia/lesson6/backup_etc_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ reboot
+ilia@ilia-VirtualBox:~$ ls
+ backup_etc.tgz   file1_c.txt   lesson2    testfile.txt   Музыка
+ dev              file1.txt     lesson5    Видео          Общедоступные
+ dir_nolist       file2         lesson6    Документы     'Рабочий стол'
+ errors.log       file2_b.txt   lesson6a   Загрузки       Шаблоны
+ file1_b.txt      file2_c.txt   snap       Изображения
+ilia@ilia-VirtualBox:~$ tar -tf backup_etc.tgz | cut -d '/' -f 1,2 | uniq
+etc/
+etc/gamemode.ini
+etc/udisks2
+etc/login.defs
+etc/subuid-
+etc/kernel-img.conf
+etc/profile
+etc/console-setup
+etc/ld.so.conf.d
+etc/machine-id
+etc/rsyslog.conf
+etc/appstream.conf
+etc/vulkan
+etc/manpath.config
+etc/sane.d
+etc/opt
+etc/systemd
+etc/gshadow
+etc/brlapi.key
+etc/legal
+etc/sudoers.d
+etc/host.conf
+etc/ltrace.conf
+etc/networkd-dispatcher
+etc/tmpfiles.d
+etc/pulse
+etc/protocols
+etc/thermald
+etc/networks
+etc/acpi
+etc/group
+etc/netplan
+etc/mailcap
+etc/NetworkManager
+etc/udev
+etc/update-notifier
+etc/whoopsie
+etc/mtab
+etc/X11
+etc/ppp
+etc/insserv.conf.d
+etc/fprintd.conf
+etc/rc1.d
+etc/hp
+etc/ucf.conf
+etc/brltty
+etc/chatscripts
+etc/alsa
+etc/ld.so.cache
+etc/subgid
+etc/initramfs-tools
+etc/dpkg
+etc/rpc
+etc/passwd
+etc/alternatives
+etc/cupshelpers
+etc/xml
+etc/rc6.d
+etc/logrotate.conf
+etc/iproute2
+etc/gss
+etc/subgid-
+etc/nsswitch.conf
+etc/apparmor.d
+etc/geoclue
+etc/modules-load.d
+etc/services
+etc/polkit-1
+etc/skel
+etc/hostname
+etc/profile.d
+etc/apm
+etc/pki
+etc/hosts.allow
+etc/brltty.conf
+etc/gtk-3.0
+etc/adduser.conf
+etc/locale.alias
+etc/crontab
+etc/fwupd
+etc/locale.gen
+etc/ca-certificates.conf.dpkg-old
+etc/fonts
+etc/mailcap.order
+etc/sudoers
+etc/ca-certificates.conf
+etc/binfmt.d
+etc/rc2.d
+etc/logcheck
+etc/lsb-release
+etc/group-
+etc/cron.d
+etc/os-release
+etc/hdparm.conf
+etc/bash_completion.d
+etc/xattr.conf
+etc/timezone
+etc/gtk-2.0
+etc/glvnd
+etc/deluser.conf
+etc/environment
+etc/mysql
+etc/mtools.conf
+etc/init.d
+etc/rc3.d
+etc/rygel.conf
+etc/pam.d
+etc/update-manager
+etc/modprobe.d
+etc/python3.8
+etc/issue.net
+etc/hostid
+etc/bluetooth
+etc/pam.conf
+etc/papersize
+etc/speech-dispatcher
+etc/nanorc
+etc/mc
+etc/apparmor
+etc/calendar
+etc/modules
+etc/magic.mime
+etc/fstab
+etc/PackageKit
+etc/dconf
+etc/rc5.d
+etc/firefox
+etc/pm
+etc/wgetrc
+etc/sensors.d
+etc/cron.monthly
+etc/ssh
+etc/cron.daily
+etc/rcS.d
+etc/gai.conf
+etc/default
+etc/snmp
+etc/xdg
+etc/e2scrub.conf
+etc/libreoffice
+etc/terminfo
+etc/rc0.d
+etc/usb_modeswitch.d
+etc/apport
+etc/shells
+etc/libblockdev
+etc/openvpn
+etc/dbus-1
+etc/update-motd.d
+etc/rc4.d
+etc/dictionaries-common
+etc/ca-certificates
+etc/pnm2ppa.conf
+etc/hosts.deny
+etc/sensors3.conf
+etc/sgml
+etc/ubuntu-advantage
+etc/cups
+etc/magic
+etc/apg.conf
+etc/anacrontab
+etc/ld.so.conf
+etc/kerneloops.conf
+etc/resolv.conf
+etc/libao.conf
+etc/zsh_command_not_found
+etc/debconf.conf
+etc/subuid
+etc/emacs
+etc/logrotate.d
+etc/libaudit.conf
+etc/ethertypes
+etc/vtrgb
+etc/ssl
+etc/libnl-3
+etc/apt
+etc/at.deny
+etc/cron.weekly
+etc/debian_version
+etc/UPower
+etc/init
+etc/kernel
+etc/rsyslog.d
+etc/mke2fs.conf
+etc/bash.bashrc
+etc/issue
+etc/sysctl.d
+etc/depmod.d
+etc/environment.d
+etc/wpa_supplicant
+etc/ghostscript
+etc/dhcp
+etc/ufw
+etc/passwd-
+etc/groff
+etc/perl
+etc/popularity-contest.conf
+etc/bash_completion
+etc/vim
+etc/security
+etc/python3
+etc/ifplugd
+etc/vmware-tools
+etc/cron.hourly
+etc/chromium
+etc/pcmcia
+etc/sysctl.conf
+etc/selinux
+etc/gdm3
+etc/rmt
+etc/cracklib
+etc/.pwd.lock
+etc/avahi
+etc/mime.types
+etc/fuse.conf
+etc/network
+etc/inputrc
+etc/thunderbird
+etc/ldap
+etc/shadow-
+etc/usb_modeswitch.conf
+etc/hosts
+etc/gnome
+etc/shadow
+etc/newt
+etc/bindresvport.blacklist
+etc/gshadow-
+etc/localtime
+etc/gdb
+etc/libpaper.d
+etc/grub.d

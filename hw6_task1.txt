@@ -1,0 +1,55 @@
+﻿ilia@ilia-VirtualBox:~/lesson6$ ls -l
+итого 8
+-rw-rw-r-- 1 ilia ilia 186 ноя 30 00:02 sed_script.sh
+-rw-rw-r-- 1 ilia ilia 326 ноя 30 01:14 tr_sed_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ cat sed_script.sh 
+#!/bin/bash
+
+file=$1
+sed -i -e '/^ *$/d' -e 's/.*/\U&/g' $file
+# Добавил удаление пустой строки или строки, состоящей из пробелов
+
+ilia@ilia-VirtualBox:~/lesson6$ cat tr_sed_script.sh 
+#!/bin/bash
+
+file=$1
+sed '/^ *$/d' $file | tr [:lower:] [:upper:] > copy_file
+# Не получается через tr сделать изменение исходного файла,
+# только копию. Также удалить пустую строку через tr вроде бы тоже не возможно
+
+ilia@ilia-VirtualBox:~/lesson6$ chmod +x sed_script.sh 
+ilia@ilia-VirtualBox:~/lesson6$ chmod +x tr_sed_script.sh 
+ilia@ilia-VirtualBox:~/lesson6$ ls -l
+итого 8
+-rwxrwxr-x 1 ilia ilia 186 ноя 30 00:02 sed_script.sh
+-rwxrwxr-x 1 ilia ilia 326 ноя 30 01:14 tr_sed_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ cat > file1.txt
+line1
+
+line2
+     
+  line3
+
+ilia@ilia-VirtualBox:~/lesson6$ ./tr_sed_script.sh file1.txt 
+ilia@ilia-VirtualBox:~/lesson6$ ls -l
+итого 16
+-rw-rw-r-- 1 ilia ilia  20 ноя 30 01:26 copy_file
+-rw-rw-r-- 1 ilia ilia  28 ноя 30 01:25 file1.txt
+-rwxrwxr-x 1 ilia ilia 186 ноя 30 00:02 sed_script.sh
+-rwxrwxr-x 1 ilia ilia 326 ноя 30 01:14 tr_sed_script.sh
+ilia@ilia-VirtualBox:~/lesson6$ cat copy_file 
+LINE1
+LINE2
+  LINE3
+ilia@ilia-VirtualBox:~/lesson6$ cat file1.txt 
+line1
+
+line2
+     
+  line3
+
+ilia@ilia-VirtualBox:~/lesson6$ ./sed_script.sh file1.txt 
+ilia@ilia-VirtualBox:~/lesson6$ cat file1.txt 
+LINE1
+LINE2
+  LINE3

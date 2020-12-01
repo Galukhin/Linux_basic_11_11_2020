@@ -1,0 +1,327 @@
+﻿ilia@ilia-VirtualBox:~/lesson6/task2$ ls -l
+итого 4
+-rwxrwxr-x 1 ilia ilia 501 ноя 30 02:34 task2_script.sh
+ilia@ilia-VirtualBox:~/lesson6/task2$ cat task2_script.sh 
+#!/bin/bash
+for i in {2010..2017}
+  do 
+    mkdir year_$i
+      for j in {1..12}
+        do
+           if [ $j -lt 10 ]
+	     then
+	       mkdir year_$i/month_0$j
+               echo 'Файл 001' > year_$i/month_0$j/001.txt
+               echo 'Файл 002' > year_$i/month_0$j/002.txt
+             else
+               mkdir year_$i/month_$j
+               echo 'Файл 001' > year_$i/month_$j/001.txt
+               echo 'Файл 002' > year_$i/month_$j/002.txt
+           fi
+        done
+done
+ilia@ilia-VirtualBox:~/lesson6/task2$ ./task2_script.sh 
+ilia@ilia-VirtualBox:~/lesson6/task2$ tree
+.
+├── task2_script.sh
+├── year_2010
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2011
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2012
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2013
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2014
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2015
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+├── year_2016
+│   ├── month_01
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_02
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_03
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_04
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_05
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_06
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_07
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_08
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_09
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_10
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   ├── month_11
+│   │   ├── 001.txt
+│   │   └── 002.txt
+│   └── month_12
+│       ├── 001.txt
+│       └── 002.txt
+└── year_2017
+    ├── month_01
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_02
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_03
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_04
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_05
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_06
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_07
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_08
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_09
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_10
+    │   ├── 001.txt
+    │   └── 002.txt
+    ├── month_11
+    │   ├── 001.txt
+    │   └── 002.txt
+    └── month_12
+        ├── 001.txt
+        └── 002.txt
+
+104 directories, 193 files
+ilia@ilia-VirtualBox:~/lesson6/task2$ cat year_2017/month_12/*
+Файл 001
+Файл 002
