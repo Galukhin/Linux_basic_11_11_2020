@@ -1,0 +1,12 @@
+﻿ilia@ilia-VirtualBox:~$ snap install p7zip-desktop
+p7zip-desktop 16.02.2 от Ermesto Castellotti (ernytech) установлен
+ilia@ilia-VirtualBox:~$ snap list
+Название            Версия              Правка  Канал            Издатель    Примечание
+core                16-2.48             10444   latest/stable    canonical✓  core
+core18              20200929            1932    latest/stable    canonical✓  base
+gnome-3-34-1804     0+git.3556cb3       60      latest/stable/…  canonical✓  -
+gtk-common-themes   0.1-50-gf7627e4     1514    latest/stable/…  canonical✓  -
+gtk2-common-themes  0.1                 13      latest/stable    canonical✓  -
+p7zip-desktop       16.02.2             220     latest/stable    ernytech    -
+snap-store          3.38.0-55-geb45541  498     latest/stable/…  canonical✓  -
+snapd               2.48                10238   latest/stable    canonical✓  snapd
