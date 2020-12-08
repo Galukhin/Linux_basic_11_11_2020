@@ -1,0 +1,51 @@
+﻿ilia@ilia-VirtualBox:~/les8$ sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2020-12-08 14:35:10 MSK; 6h ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 14460 (dockerd)
+      Tasks: 10
+     Memory: 87.9M
+     CGroup: /system.slice/docker.service
+             └─14460 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+дек 08 16:37:09 ilia-VirtualBox dockerd[14460]: time="2020-12-08T16:37:09.830955393+03:00" level=info msg="ignoring event" module=li>
+дек 08 18:42:41 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:42:41.790433137+03:00" level=info msg="Layer sha256:8d9416f7b463>
+дек 08 18:43:24 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:43:24.875145020+03:00" level=info msg="ignoring event" module=li>
+дек 08 18:44:15 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:44:15.737911576+03:00" level=info msg="ignoring event" module=li>
+дек 08 18:44:45 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:44:45.072826305+03:00" level=info msg="Layer sha256:58633668e2fe>
+дек 08 18:44:46 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:44:46.218068142+03:00" level=info msg="Layer sha256:58633668e2fe>
+дек 08 18:44:47 ilia-VirtualBox dockerd[14460]: time="2020-12-08T18:44:47.112259350+03:00" level=info msg="Layer sha256:58633668e2fe>
+дек 08 19:48:13 ilia-VirtualBox dockerd[14460]: time="2020-12-08T19:48:13.619851347+03:00" level=info msg="Container adfcb3fcb5ddc02>
+дек 08 19:48:13 ilia-VirtualBox dockerd[14460]: time="2020-12-08T19:48:13.838245885+03:00" level=info msg="ignoring event" module=li>
+дек 08 20:35:08 ilia-VirtualBox dockerd[14460]: time="2020-12-08T20:35:08.893543089+03:00" level=info msg="ignoring event" module=li>
+
+ilia@ilia-VirtualBox:~/les8$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pull complete 
+Digest: sha256:e7c70bb24b462baa86c102610182e3efcb12a04854e8c582838d92970a09f323
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+

@@ -1,0 +1,63 @@
+﻿ilia@ilia-VirtualBox:~/les8$ docker search ubuntu
+NAME                                                      DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+ubuntu                                                    Ubuntu is a Debian-based Linux operating sys…   11596               [OK]                
+dorowu/ubuntu-desktop-lxde-vnc                            Docker image to provide HTML5 VNC interface …   479                                     [OK]
+websphere-liberty                                         WebSphere Liberty multi-architecture images …   264                 [OK]                
+rastasheep/ubuntu-sshd                                    Dockerized SSH service, built on top of offi…   250                                     [OK]
+consol/ubuntu-xfce-vnc                                    Ubuntu container with "headless" VNC session…   228                                     [OK]
+ubuntu-upstart                                            Upstart is an event-based replacement for th…   109                 [OK]                
+neurodebian                                               NeuroDebian provides neuroscience research s…   76                  [OK]                
+1and1internet/ubuntu-16-nginx-php-phpmyadmin-mysql-5      ubuntu-16-nginx-php-phpmyadmin-mysql-5          50                                      [OK]
+ubuntu-debootstrap                                        debootstrap --variant=minbase --components=m…   44                  [OK]                
+open-liberty                                              Open Liberty multi-architecture images based…   39                  [OK]                
+i386/ubuntu                                               Ubuntu is a Debian-based Linux operating sys…   24                                      
+nuagebec/ubuntu                                           Simple always updated Ubuntu docker images w…   24                                      [OK]
+1and1internet/ubuntu-16-apache-php-5.6                    ubuntu-16-apache-php-5.6                        14                                      [OK]
+1and1internet/ubuntu-16-apache-php-7.0                    ubuntu-16-apache-php-7.0                        13                                      [OK]
+1and1internet/ubuntu-16-nginx-php-phpmyadmin-mariadb-10   ubuntu-16-nginx-php-phpmyadmin-mariadb-10       11                                      [OK]
+1and1internet/ubuntu-16-nginx-php-5.6-wordpress-4         ubuntu-16-nginx-php-5.6-wordpress-4             7                                       [OK]
+darksheer/ubuntu                                          Base Ubuntu Image -- Updated hourly             5                                       [OK]
+pivotaldata/ubuntu                                        A quick freshening-up of the base Ubuntu doc…   4                                       
+1and1internet/ubuntu-16-nginx-php-7.0                     ubuntu-16-nginx-php-7.0                         4                                       [OK]
+pivotaldata/ubuntu16.04-build                             Ubuntu 16.04 image for GPDB compilation         2                                       
+smartentry/ubuntu                                         ubuntu with smartentry                          1                                       [OK]
+1and1internet/ubuntu-16-php-7.1                           ubuntu-16-php-7.1                               1                                       [OK]
+1and1internet/ubuntu-16-sshd                              ubuntu-16-sshd                                  1                                       [OK]
+pivotaldata/ubuntu-gpdb-dev                               Ubuntu images for GPDB development              1                                       
+pivotaldata/ubuntu16.04-test                              Ubuntu 16.04 image for GPDB testing             0                                       
+
+ilia@ilia-VirtualBox:~/les8$ docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+da7391352a9b: Pull complete 
+14428a6d4bcd: Pull complete 
+2c2d948710f2: Pull complete 
+Digest: sha256:c95a8e48bf88e9849f3e0f723d9f49fa12c5a00cfc6e60d2bc99d87555295e4c
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+ilia@ilia-VirtualBox:~/les8$ docker run -it ubuntu
+root@87a760ec118b:/# ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@87a760ec118b:/# top
+
+top - 19:22:45 up  8:13,  0 users,  load average: 0.20, 0.12, 0.05
+Tasks:   2 total,   1 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.9 us,  2.0 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 19:23:25 up  8:14,  0 users,  load average: 0.18, 0.12, 0.05
+Tasks:   2 total,   1 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  1.0 sy,  0.0 ni, 94.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1987.8 total,    151.0 free,   1190.5 used,    646.3 buff/cache
+MiB Swap:   2749.0 total,   2641.7 free,    107.2 used.    618.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                       
+      9 root      20   0    6080   3248   2756 R   0.3   0.2   0:00.03 top                                                           
+      1 root      20   0    4108   3444   2896 S   0.0   0.2   0:00.07 bash                                                          
+
+
+root@87a760ec118b:/# exit
+exit
+ilia@ilia-VirtualBox:~/les8$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+87a760ec118b        ubuntu              "/bin/bash"         6 minutes ago       Exited (0) 19 seconds ago                       charming_faraday
+68af703eb840        hello-world         "/hello"            2 hours ago         Exited (0) 2 hours ago                          sad_swanson
